@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Fashions from "@/components/Fashions";
+import FeaturedServices from "@/components/FeaturedServices";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
@@ -20,6 +21,7 @@ export default function Home() {
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Hero />
         <Fashions />
+        <FeaturedServices />
       </main>
     </>
   )

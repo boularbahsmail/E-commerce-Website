@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Icon } from "../Shared/Icon";
 
 export const FashionCard = ({ Item }: any) => {
     return (
@@ -23,6 +24,22 @@ export const FashionCard = ({ Item }: any) => {
                     {Item?.description}
                 </p>
             </div>
+        </div>
+    );
+};
+
+export const ServiceCard = ({ Service }: any) => {
+    return (
+        <div className='w-full flex flex-col justify-center items-center gap-3'>
+            <span className='text-white'>
+                <Icon title={Service?.icon} props={{ fontSize: 60 }} />
+            </span>
+            <h2 className='text-white lg:text-2xl text-xl font-semibold'>
+                {Service?.title}
+            </h2>
+            <p className='text-sm text-white/70 text-center'>
+                {Service?.description}
+            </p>
         </div>
     );
 };
