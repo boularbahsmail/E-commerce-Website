@@ -5,7 +5,7 @@ import { Icon } from '../Shared/Icon';
 const Hero = () => {
     return (
         <div className='max-w-[1400px] w-full mx-auto lg:py-14 py-10 flex flex-col justify-center items-center gap-10'>
-            <ul className='w-full flex justify-center items-center gap-10 flex-wrap'>
+            <ul className='w-full flex justify-center items-center gap-x-10 lg:gap-y-0 gap-y-4 flex-wrap'>
                 <li className='font-medium uppercase lg:text-md text-sm text-black' title='Home'>
                     <Link href={"/"}>Home</Link>
                 </li>

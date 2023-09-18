@@ -3,5 +3,5 @@ export interface Fashion {
     title: string;
     cover: string;
     description: string;
-    style: string;
+    isReversed: boolean;
 }
