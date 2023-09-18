@@ -1,7 +1,7 @@
 import React from 'react';
-import fashions from '@/src/static/data/Fashions';
-import { Fashion } from '@/src/types/Fashion.types';
-import { FashionCard } from '@/src/static/styledComponents';
+import fashions from '@/static/data/Fashions';
+import { Fashion } from '@/types/Fashion.types';
+import { FashionCard } from '@/components/styledComponents';
 
 const Fashions = () => {
     return (

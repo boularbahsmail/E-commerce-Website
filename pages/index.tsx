@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Header from "@/src/components/Header";
-import Hero from "@/src/components/Hero";
-import Fashions from "@/src/components/Fashions";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Fashions from "@/components/Fashions";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)

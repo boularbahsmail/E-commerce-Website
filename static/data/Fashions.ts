@@ -1,4 +1,4 @@
-import { Fashion } from "../../types/Fashion.types";
+import { Fashion } from "@/types/Fashion.types";
 
 const fashions: Fashion[] = [
     {
