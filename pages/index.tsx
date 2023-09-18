@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Header from "@/src/components/Header";
 import Hero from "@/src/components/Hero";
+import Fashions from "@/src/components/Fashions";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
@@ -18,6 +19,7 @@ export default function Home() {
       >
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Hero />
+        <Fashions />
       </main>
     </>
   )

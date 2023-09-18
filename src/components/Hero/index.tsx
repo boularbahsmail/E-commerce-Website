@@ -38,7 +38,7 @@ const Hero = () => {
                 </p>
             </div>
 
-            <div className='relative max-w-[1100px] w-full mx-auto overflow-hidden rounded-3xl bg-gray-200'
+            <div className='relative max-w-[1100px] w-full mx-auto overflow-hidden rounded-3xl bg-gray-200 shadow-xl shadow-gray-100'
                 style={{
                     backgroundImage: "url('https://shorturl.at/bnMO4')",
                     backgroundSize: "cover",
@@ -49,12 +49,12 @@ const Hero = () => {
                 }}
             >
                 <div className='absolute lg:top-0 bottom-4 lg:left-10 left-4 max-w-[400px] w-full lg:h-full flex flex-col justify-center items-start gap-4'>
-                    <h2 className='text-2xl lg:text-4xl font-bold text-white'>
+                    <h2 className='text-3xl lg:text-4xl font-bold text-white'>
                         Experience The Last Women Fashion Of 2023
                     </h2>
                     <button
                         className='flex justify-start items-center gap-3 text-white font-medium py-2.5 px-5 border border-white/50 rounded-[10px] backdrop-blur-xl'
-                        title='Modern Fashion Access'>
+                        title='Modern Fashion AccesFs'>
                         <span>Modern Fashion Access</span>
                         <Icon title='BsArrowRight' />
                     </button>
