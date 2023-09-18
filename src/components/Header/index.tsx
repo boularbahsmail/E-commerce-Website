@@ -10,7 +10,7 @@ interface menuState {
 const Header = ({ menuOpen, setMenuOpen }: menuState) => {
     return (
         <header className='max-w-[1400px] w-full mx-auto flex justify-between items-center gap-8'>
-            <div className='z-50'>
+            <div className='z-50' style={{ zIndex: 9999 }}>
                 <Link href={"/"}>
                     <h2 className='font-bold uppercase text-xl lg:text-2xl'>
                         Zara
@@ -18,8 +18,8 @@ const Header = ({ menuOpen, setMenuOpen }: menuState) => {
                 </Link>
             </div>
 
-            <div className={`w-full flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-8 || duration-500 ease-in-out || bg-white/50 backdrop-blur-md || lg:static lg:h-auto lg:p-0 || absolute ${menuOpen ? "left-0" : "-left-full"} top-0 h-screen p-4`}>
-                <div className='lg:max-w-[700px] max-w-[300px] w-full'>
+            <div className={`w-full flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-8 lg:bg-transparent || duration-500 ease-in-out || bg-white lg:static lg:h-auto lg:p-0 || z-50 absolute ${menuOpen ? "left-0" : "-left-full"} top-0 h-screen p-4`}>
+                <div className='lg:max-w-[700px] max-w-[400px] w-full'>
                     <div className='w-full mx-auto bg-gray-50 border border-gray-100 rounded-[8px] flex lg:flex-row flex-col justify-center items-center lg:gap-4 gap-0 px-4 lg:py-0 py-2'>
                         <button className='lg:w-[25%] w-full text-sm text-gray-600 flex justify-center items-center gap-2 font-medium px-2 py-3'>
                             <span>All Categories</span>
@@ -40,7 +40,7 @@ const Header = ({ menuOpen, setMenuOpen }: menuState) => {
                     </div>
 
                     <div>
-                        <button className='flex justify-center items-center gap-2 text-sl bg-gray-50 py-2 px-4 text-gray-400 border border-gray-200 rounded-[8px] text-sm'>
+                        <button className='flex justify-center items-center gap-2 text-sl bg-gray-50 py-2 px-4 text-gray-400 border border-gray-200 rounded-[10px] text-sm'>
                             <span>
                                 <Icon title='BiShoppingBag' />
                             </span>

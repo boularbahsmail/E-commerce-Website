@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Header from "@/src/components/Header";
+import Hero from "@/src/components/Hero";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
@@ -13,9 +14,10 @@ export default function Home() {
       </Head>
 
       <main
-        className={`p-4 h-screen w-screen`}
+        className={`p-4 h-screen w-screen ${menuOpen ? "overflow-y-hidden" : "overflow-y-auto"}`}
       >
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Hero />
       </main>
     </>
   )
