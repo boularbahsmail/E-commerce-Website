@@ -13,7 +13,7 @@ export const FashionCard = ({ Item }: any) => {
                 maxHeight: 450,
                 height: "100vh"
             }}>
-                <Link href={"/"} className='absolute lg:left-0 left-6 lg:top-0 bottom-6 w-full lg:h-full lg:backdrop-blur-md lg:p-6 lg:bg-black/50 flex lg:justify-center justify-start items-center lg:opacity-0 duration-300 ease-in-out hover:opacity-100'>
+                <Link href={"/"} className='absolute lg:left-0 left-6 lg:top-0 bottom-6 w-full lg:h-full lg:backdrop-blur-md lg:p-6 lg:bg-black/50 flex lg:justify-center justify-start items-center lg:opacity-0 duration-300 ease-in-out hover:opacity-100 lg:max-w-full max-w-[300px] lg:cursor-pointer cursor-default'>
                     <h2 className='font-bold text-white text-3xl lg:text-3xl lg:text-center text-left lg:hover:underline underline lg:max-w-max max-w-[250px] w-full'>
                         {Item?.title}
                     </h2>

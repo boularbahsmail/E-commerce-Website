@@ -45,7 +45,7 @@ const Collection = ({ type, gender, image, clothesTypes, clothesCollection }: an
                                         backgroundPosition: "top"
                                     }}>
                                         <div className='absolute left-2 top-2'>
-                                            <button className={`h-8 w-8  flex justify-center items-center bg-black ${ClothesItem?.liked ? "text-red-600" : "text-white"} rounded-lg active:scale-95`}>
+                                            <button className={`h-8 w-8  flex justify-center items-center bg-black ${ClothesItem?.liked ? "text-red-600" : "text-white"} rounded-lg active:scale-95 lg:cursor-pointer cursor-default`}>
                                                 <Icon title={ClothesItem?.liked ? "BsHeartFill" : "BsHeart"} />
                                             </button>
                                         </div>
@@ -55,13 +55,13 @@ const Collection = ({ type, gender, image, clothesTypes, clothesCollection }: an
                                 <div className='w-full flex flex-col justify-center items-center gap-3'>
                                     <div className='w-full flex justify-center items-center gap-2'>
                                         {Array.from({ length: ClothesItem?.rating }).map((_, index) => (
-                                            <span className='text-yellow-400'>
-                                                <Icon title='BsStarFill' props={{ fontSize: 12 }} key={index} />
+                                            <span className='text-yellow-400' key={index}>
+                                                <Icon title='BsStarFill' props={{ fontSize: 12 }} />
                                             </span>
                                         ))}
                                     </div>
 
-                                    <Link href={"/"} className='text-center font-medium text-sm hover:underline w-[80%] mx-auto'>
+                                    <Link href={"/"} className='text-center font-medium text-sm hover:underline w-[80%] mx-auto lg:cursor-pointer cursor-default'>
                                         {ClothesItem?.title}
                                     </Link>
                                 </div>
@@ -71,7 +71,7 @@ const Collection = ({ type, gender, image, clothesTypes, clothesCollection }: an
                         <div className='w-full h-full flex justify-center items-center lg:px-2 px-10 text-center'>
                             <Link
                                 href={"/"}
-                                className='flex flex-col justify-center items-center gap-3 font-medium text-center hover:underline h-max'>
+                                className='flex flex-col justify-center items-center gap-3 font-medium text-center hover:underline h-max lg:cursor-pointer cursor-default'>
                                 <span className='lg:text-lg text-md'>Get to discover more</span>
                                 <Icon title='BsArrowRight' props={{ fontSize: 20 }} />
                             </Link>
