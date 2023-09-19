@@ -4,13 +4,15 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Fashions from "@/components/Fashions";
 import FeaturedServices from "@/components/FeaturedServices";
+import Collection from "@/components/Shared/Collection";
+import { men_clothes_types, men_clothes } from "@/static/data/Collection";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
   return (
     <>
       <Head>
-        <title>E-commerce Website</title>
+        <title>ZARA - Reimagining Luxury a Timeless Experience for the Modern Woman</title>
         <meta name="description" content="" />
         <link rel="icon" type="x-icon" href="" />
       </Head>
@@ -22,6 +24,13 @@ export default function Home() {
         <Hero />
         <Fashions />
         <FeaturedServices />
+        <Collection
+          type={1}
+          gender={"Men"}
+          image={"https://shorturl.at/hiENO"}
+          clothesTypes={men_clothes_types}
+          clothesCollection={men_clothes}
+        />
       </main>
     </>
   )
