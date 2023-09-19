@@ -56,7 +56,7 @@ const Testimonials = () => {
                     className={`p-2.5 rounded-full 
                     ${currentItem === 1 ?
                             "border border-gray-300 text-gray-300" :
-                            "bg-black text-white"} active:scale-95 duration-300 ease-in-out`}
+                            "bg-black text-white"} active:scale-95 duration-300 ease-in-out lg:cursor-pointer cursor-default`}
                     onClick={() => { currentItem > 1 && setCurrentItem(currentItem - 1) }}
                     disabled={currentItem > 1 ? false : true}
                 >
@@ -66,7 +66,7 @@ const Testimonials = () => {
                     className={`p-2.5 rounded-full 
                     ${currentItem < testimonials?.length ?
                             "bg-black text-white" :
-                            "border border-gray-300 text-gray-300"} active:scale-95 duration-300 ease-in-out`}
+                            "border border-gray-300 text-gray-300"} active:scale-95 duration-300 ease-in-out lg:cursor-pointer cursor-default`}
                     onClick={() => { currentItem < testimonials?.length && setCurrentItem(currentItem + 1) }}
                     disabled={currentItem < testimonials?.length ? false : true}
                 >

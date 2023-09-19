@@ -7,41 +7,31 @@ const Hero = () => {
         <div className='max-w-[1400px] w-full mx-auto lg:py-14 py-10 flex flex-col justify-center items-center gap-10'>
             <ul className='w-full flex justify-center items-center gap-x-10 lg:gap-y-0 gap-y-4 flex-wrap'>
                 <li className='font-medium uppercase lg:text-md text-sm text-black' title='Home'>
-                    <Link
-                        href={"/"}
-                        className='lg:cursor-pointer cursor-default'>
+                    <Link href={"/"}>
                         Home
                     </Link>
                 </li>
 
                 <li className='font-normal uppercase lg:text-md text-sm text-gray-400' title='Shop'>
-                    <Link
-                        href={"/"}
-                        className='lg:cursor-pointer cursor-default'>
+                    <Link href={"/"}>
                         Shop
                     </Link>
                 </li>
 
                 <li className='font-normal uppercase lg:text-md text-sm text-gray-400' title='Blog'>
-                    <Link
-                        href={"/"}
-                        className='lg:cursor-pointer cursor-default'>
+                    <Link href={"/"}>
                         Blog
                     </Link>
                 </li>
 
                 <li className='font-normal uppercase lg:text-md text-sm text-gray-400' title='Contact Us'>
-                    <Link
-                        href={"/"}
-                        className='lg:cursor-pointer cursor-default'>
+                    <Link href={"/"}>
                         Contact Us
                     </Link>
                 </li>
 
                 <li className='font-normal uppercase lg:text-md text-sm text-gray-400' title='Buy Now'>
-                    <Link
-                        href={"/"}
-                        className='lg:cursor-pointer cursor-default'>
+                    <Link href={"/"}>
                         Buy Now
                     </Link>
                 </li>

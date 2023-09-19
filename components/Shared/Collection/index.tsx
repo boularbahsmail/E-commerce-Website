@@ -61,7 +61,7 @@ const Collection = ({ type, gender, image, clothesTypes, clothesCollection }: an
                                         ))}
                                     </div>
 
-                                    <Link href={"/"} className='text-center font-medium text-sm hover:underline w-[80%] mx-auto lg:cursor-pointer cursor-default'>
+                                    <Link href={"/"} className='text-center font-medium text-sm hover:underline w-[80%] mx-auto'>
                                         {ClothesItem?.title}
                                     </Link>
                                 </div>
@@ -71,7 +71,7 @@ const Collection = ({ type, gender, image, clothesTypes, clothesCollection }: an
                         <div className='w-full h-full flex justify-center items-center lg:px-2 px-10 text-center'>
                             <Link
                                 href={"/"}
-                                className='flex flex-col justify-center items-center gap-3 font-medium text-center hover:underline h-max lg:cursor-pointer cursor-default'>
+                                className='flex flex-col justify-center items-center gap-3 font-medium text-center hover:underline h-max'>
                                 <span className='lg:text-lg text-md'>Get to discover more</span>
                                 <Icon title='BsArrowRight' props={{ fontSize: 20 }} />
                             </Link>
