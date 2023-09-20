@@ -7,6 +7,7 @@ import FeaturedServices from "@/components/FeaturedServices";
 import Collection from "@/components/Shared/Collection";
 import { men_clothes_types, men_clothes } from "@/static/data/Collection";
 import Testimonials from "@/components/Testimonials";
+import AdBanner from "@/components/AdBanner";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
@@ -32,6 +33,7 @@ export default function Home() {
           clothesTypes={men_clothes_types}
           clothesCollection={men_clothes}
         />
+        <AdBanner />
         <Testimonials />
       </main>
     </>

@@ -5,7 +5,7 @@ import testimonials from '@/static/data/Testimonials';
 const Testimonials = () => {
     const [currentItem, setCurrentItem] = useState<number>(1);
     return (
-        <div className='max-w-[1200px] w-full mx-auto lg:py-20 py-10 flex flex-col justify-center items-center gap-6'>
+        <div className='max-w-[1200px] w-full mx-auto lg:py-16 py-10 flex flex-col justify-center items-center gap-6'>
             <div className='w-full flex flex-col justify-center items-center gap-10'>
                 <div className='w-full flex flex-col justify-center items-center gap-4'>
                     <h5 className='text-xs uppercase text-gray-400 font-medium'>Testimonials</h5>
