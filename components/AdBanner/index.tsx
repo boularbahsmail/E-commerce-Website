@@ -4,7 +4,7 @@ import { Icon } from '../Shared/Icon';
 const AdBanner = () => {
     return (
         <div className='max-w-[1200px] w-full mx-auto lg:py-20 py-10'>
-            <div className='relative w-full md:p-10 p-6 rounded-3xl overflow-hidden' style={{
+            <div className='relative w-full md:p-10 p-4 rounded-3xl overflow-hidden' style={{
                 backgroundImage: "url('https://shorturl.at/aevXY')",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
