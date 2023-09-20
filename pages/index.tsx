@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import Fashions from "@/components/Fashions";
 import FeaturedServices from "@/components/FeaturedServices";
 import Collection from "@/components/Shared/Collection";
-import { men_clothes_types, men_clothes } from "@/static/data/Collection";
+import { men_clothes_types, men_clothes, women_clothes_types, women_clothes } from "@/static/data/Collection";
 import Testimonials from "@/components/Testimonials";
 import AdBanner from "@/components/AdBanner";
 
@@ -34,6 +34,13 @@ export default function Home() {
           clothesCollection={men_clothes}
         />
         <AdBanner />
+        <Collection
+          type={2}
+          gender={"Women"}
+          image={"https://shorturl.at/nBRV6"}
+          clothesTypes={women_clothes_types}
+          clothesCollection={women_clothes}
+        />
         <Testimonials />
       </main>
     </>

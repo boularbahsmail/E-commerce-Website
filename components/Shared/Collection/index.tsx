@@ -40,9 +40,9 @@ const Collection = ({ type, gender, image, clothesTypes, clothesCollection }: an
                                         minHeight: 150,
                                         height: 100,
                                         backgroundImage: `url(${ClothesItem?.image})`,
-                                        backgroundSize: "cover",
+                                        backgroundSize: "100%",
                                         backgroundRepeat: "no-repeat",
-                                        backgroundPosition: "top"
+                                        backgroundPosition: "center"
                                     }}>
                                         <div className='absolute left-2 top-2'>
                                             <button className={`h-8 w-8  flex justify-center items-center bg-black ${ClothesItem?.liked ? "text-red-600" : "text-white"} rounded-lg active:scale-95 lg:cursor-pointer cursor-default`}>

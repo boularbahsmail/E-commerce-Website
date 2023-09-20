@@ -1,4 +1,6 @@
-export const men_clothes_types = ["Hoodies", "T-shirts", "Panties", "Shirts"];
+export const men_clothes_types = ["Hoodies", "T-shirts", "Pants", "Shirts"];
+export const women_clothes_types = ["Hats", "OverSized Hoodies", "Pants", "Dresses"];
+
 export const men_clothes = [
     {
         id: 1,
@@ -34,5 +36,43 @@ export const men_clothes = [
         rating: 4,
         title: "Gold Yellow Hoodie Officiel",
         liked: true
+    }
+];
+
+export const women_clothes = [
+    {
+        id: 1,
+        image: "https://shorturl.at/lHUV5",
+        rating: 4,
+        title: "Yellow Dashed Summer Hat",
+        liked: false
+    },
+    {
+        id: 2,
+        image: "https://shorturl.at/crQTZ",
+        rating: 5,
+        title: "Dark Red Cutton Winter Hat",
+        liked: true
+    },
+    {
+        id: 3,
+        image: "https://shorturl.at/efnov",
+        rating: 3,
+        title: "Classic Wood/T2 Summer Hat",
+        liked: true
+    },
+    {
+        id: 4,
+        image: "https://shorturl.at/iDLRY",
+        rating: 5,
+        title: "Summer Red Lightweight Hat",
+        liked: false
+    },
+    {
+        id: 5,
+        image: "https://shorturl.at/bnpV9",
+        rating: 3,
+        title: "Pink Wood/T3 Summer Hat",
+        liked: false
     }
 ];
