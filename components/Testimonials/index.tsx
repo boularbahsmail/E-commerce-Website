@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Icon } from '../Shared/Icon';
 import testimonials from '@/data/Testimonials';
+import { Testimonial } from '@/types/Testimonial.types';
 
 const Testimonials = () => {
     const [currentItem, setCurrentItem] = useState<number>(1);
@@ -18,7 +19,7 @@ const Testimonials = () => {
                     </p>
                 </div>
 
-                {testimonials?.map((Testimonial: any) => Testimonial?.id === currentItem && (
+                {testimonials?.map((Testimonial: Testimonial) => Testimonial?.id === currentItem && (
                     <div className='w-full flex flex-col justify-center items-center gap-4' key={Testimonial?.id}>
                         <div className='flex justify-center items-center gap-3'>
                             {Array.from({ length: Testimonial?.rating }).map((_, index) => (
