@@ -9,6 +9,7 @@ import { men_clothes_types, men_clothes, women_clothes_types, women_clothes } fr
 import Testimonials from "@/components/Testimonials";
 import AdBanner from "@/components/AdBanner";
 import FeaturedFashions from "@/components/FeaturedFashions";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -44,6 +45,7 @@ export default function Home() {
         />
         <Testimonials />
         <FeaturedFashions />
+        <Footer />
       </main>
     </>
   )
