@@ -8,7 +8,7 @@ import Collection from "@/components/Shared/Collection";
 import { men_clothes_types, men_clothes, women_clothes_types, women_clothes } from "@/data/Collection";
 import Testimonials from "@/components/Testimonials";
 import AdBanner from "@/components/AdBanner";
-import FeaturedProducts from "@/components/FeaturedProducts";
+import FeaturedFashions from "@/components/FeaturedFashions";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -43,7 +43,7 @@ export default function Home() {
           clothesCollection={women_clothes}
         />
         <Testimonials />
-        <FeaturedProducts />
+        <FeaturedFashions />
       </main>
     </>
   )

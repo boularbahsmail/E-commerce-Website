@@ -1,8 +1,9 @@
 import React from 'react';
 import { Icon } from '../Icon';
 import Link from 'next/link';
+import { Collection } from '@/types/Collection.types';
 
-const Collection = ({ type, gender, image, clothesTypes, clothesCollection }: any) => {
+const Collection = ({ type, gender, image, clothesTypes, clothesCollection }: Collection) => {
     return (
         <div className='max-w-[1200px] w-full mx-auto py-10 flex flex-col justify-center items-start gap-8'>
             <div className='flex flex-col justify-center items-start gap-2'>
