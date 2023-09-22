@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Icon } from '../Shared/Icon';
-import testimonials from '@/static/data/Testimonials';
+import testimonials from '@/data/Testimonials';
 
 const Testimonials = () => {
     const [currentItem, setCurrentItem] = useState<number>(1);

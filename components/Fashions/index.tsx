@@ -1,5 +1,5 @@
 import React from 'react';
-import fashions from '@/static/data/Fashions';
+import fashions from '@/data/Fashions';
 import { Fashion } from '@/types/Fashion.types';
 import { FashionCard } from '@/components/styledComponents';
 

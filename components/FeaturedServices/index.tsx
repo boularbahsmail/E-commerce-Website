@@ -1,5 +1,5 @@
 import React from 'react';
-import services from '@/static/data/Services';
+import services from '@/data/Services';
 import { Service } from '@/types/Services.types';
 import { ServiceCard } from '../styledComponents';
 

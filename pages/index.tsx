@@ -5,12 +5,13 @@ import Hero from "@/components/Hero";
 import Fashions from "@/components/Fashions";
 import FeaturedServices from "@/components/FeaturedServices";
 import Collection from "@/components/Shared/Collection";
-import { men_clothes_types, men_clothes, women_clothes_types, women_clothes } from "@/static/data/Collection";
+import { men_clothes_types, men_clothes, women_clothes_types, women_clothes } from "@/data/Collection";
 import Testimonials from "@/components/Testimonials";
 import AdBanner from "@/components/AdBanner";
+import FeaturedProducts from "@/components/FeaturedProducts";
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false)
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
     <>
       <Head>
@@ -42,6 +43,7 @@ export default function Home() {
           clothesCollection={women_clothes}
         />
         <Testimonials />
+        <FeaturedProducts />
       </main>
     </>
   )
