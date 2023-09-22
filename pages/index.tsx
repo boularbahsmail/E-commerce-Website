@@ -30,7 +30,7 @@ export default function Home() {
         <Collection
           type={1}
           gender={"Men"}
-          image={"https://shorturl.at/hiENO"}
+          image={"/assets/images/mens-collection-img.png"}
           clothesTypes={men_clothes_types}
           clothesCollection={men_clothes}
         />
@@ -38,7 +38,7 @@ export default function Home() {
         <Collection
           type={2}
           gender={"Women"}
-          image={"https://shorturl.at/nBRV6"}
+          image={"/assets/images/womens-collection-img.png"}
           clothesTypes={women_clothes_types}
           clothesCollection={women_clothes}
         />
