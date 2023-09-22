@@ -18,7 +18,7 @@ const Header = ({ menuOpen, setMenuOpen }: menuState) => {
                 </Link>
             </div>
 
-            <div className={`w-full flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-8 lg:bg-transparent || duration-500 ease-in-out || bg-white lg:static lg:h-auto lg:p-0 || z-50 absolute ${menuOpen ? "left-0" : "-left-full"} top-0 h-screen p-4`}>
+            <div className={`w-full flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-8 lg:bg-transparent || duration-300 ease-in-out || bg-white lg:static lg:h-auto lg:p-0 || z-50 absolute ${menuOpen ? "left-0" : "-left-full"} top-0 h-screen p-4`}>
                 <div className='lg:max-w-[700px] max-w-[400px] w-full'>
                     <div className='w-full mx-auto bg-gray-50 border border-gray-100 rounded-[8px] flex lg:flex-row flex-col justify-center items-center lg:gap-4 gap-0 px-4 lg:py-0 py-2'>
                         <button className='lg:w-[25%] w-full text-sm text-gray-600 flex justify-center items-center gap-2 font-medium px-2 py-3'>

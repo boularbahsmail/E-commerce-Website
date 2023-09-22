@@ -21,7 +21,7 @@ const AdBanner = () => {
                         but the majority have suffered alteration in some form.
                     </p>
                     <button
-                        className='flex justify-start items-center gap-3 text-white md:text-lg text-sm font-medium py-2.5 px-5 bg-black rounded-[10px] lg:cursor-pointer cursor-default'
+                        className='flex justify-start items-center gap-3 text-white md:text-lg text-sm font-medium py-2.5 px-5 bg-black rounded-[10px] duration-300 ease-in-out lg:cursor-pointer cursor-default active:duration-0 active:scale-95'
                         title='Get The Unlimitted Access'>
                         <span>Get The Unlimitted Access</span>
                         <Icon title='BsArrowRight' />

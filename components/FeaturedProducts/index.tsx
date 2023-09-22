@@ -34,7 +34,7 @@ const FeaturedProducts = () => {
                         }}>
                             <div className='absolute right-0 bottom-0 p-4 h-max w-full bg-gradient-to-t from-black/70 via-black/70 to-transparent flex flex-col justify-center items-start gap-2'>
                                 <p className='text-left text-sm text-white'>{Product?.description}</p>
-                                <button className='w-full py-2.5 px-5 duration-300 ease-in-out rounded-lg backdrop-blur-md text-white bg-white/10 border border-gray-50/10 flex justify-center items-center gap-2 md:text-lg text-sm font-semibold hover:bg-white/20'>
+                                <button className='w-full py-2.5 px-5 duration-300 ease-in-out rounded-lg backdrop-blur-md text-white bg-white/10 border border-gray-50/10 flex justify-center items-center gap-2 md:text-lg text-sm font-semibold hover:bg-white/20 lg:cursor-pointer cursor-default active:duration-0 active:scale-95 '>
                                     <span>Discover More</span>
                                     <Icon title='BsArrowRight' />
                                 </button>

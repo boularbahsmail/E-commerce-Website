@@ -63,7 +63,7 @@ const Hero = () => {
                         Experience The Last Women Fashion Of 2023
                     </h2>
                     <button
-                        className='flex justify-start items-center gap-3 text-white font-medium py-2.5 px-5 border border-white/50 rounded-[10px] backdrop-blur-xl lg:cursor-pointer cursor-default'
+                        className='flex justify-start items-center gap-3 text-white font-medium py-2.5 px-5 border border-white/50 rounded-[10px] backdrop-blur-xl duration-300 ease-in-out lg:cursor-pointer cursor-default active:duration-0 active:scale-95'
                         title='Modern Fashion AccesFs'>
                         <span>Modern Fashion Access</span>
                         <Icon title='BsArrowRight' />
