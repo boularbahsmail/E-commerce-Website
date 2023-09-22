@@ -50,7 +50,7 @@ const Hero = () => {
 
             <div className='relative max-w-[1100px] w-full mx-auto overflow-hidden rounded-3xl bg-gray-200 shadow-xl shadow-gray-100'
                 style={{
-                    backgroundImage: "url('https://shorturl.at/bnMO4')",
+                    backgroundImage: "url('/assets/images/hero-img.png')",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "top",

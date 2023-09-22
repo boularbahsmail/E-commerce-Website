@@ -1,7 +1,7 @@
 const testimonials = [
     {
         id: 1,
-        avatar: "https://shorturl.at/lsCT4",
+        avatar: "/assets/avatars/john-doe-avatar.jpeg",
         name: "John Doe",
         role: "Graphic Designer",
         company: "Nike",
@@ -10,7 +10,7 @@ const testimonials = [
     },
     {
         id: 2,
-        avatar: "/assets/ismail-boularbah-avatar.jpg",
+        avatar: "/assets/avatars/ismail-boularbah-avatar.jpg",
         name: "Ismail Boularbah",
         role: "Frontend Engineer",
         company: "Fiamane",
@@ -19,7 +19,7 @@ const testimonials = [
     },
     {
         id: 3,
-        avatar: "https://shorturl.at/hJVY1",
+        avatar: "/assets/avatars/steve-harvy-avatar.jpeg",
         name: "Steve Harvy",
         role: "Product Manager",
         company: "Cisco",
