@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Icon } from '../Shared/Icon';
 import { fashions_types } from '@/data/FashionsType';
+import Cart from '../Shared/Cart';
 
-interface menuState {
+interface propsState {
     menuOpen: boolean;
-    setMenuOpen: Function
+    setMenuOpen: Function;
+    cartOpen: boolean;
+    setCartOpen: Function
 }
 
-const Header = ({ menuOpen, setMenuOpen }: menuState) => {
+const Header = ({ menuOpen, setMenuOpen, cartOpen, setCartOpen }: propsState) => {
     const [currentCategory, setCurrentCategory] = useState({ open: false, value: "ALL", title: "All Categories" });
     return (
         <header className='max-w-[1400px] w-full mx-auto flex justify-between items-center gap-8'>
@@ -72,7 +75,9 @@ const Header = ({ menuOpen, setMenuOpen }: menuState) => {
                     </div>
 
                     <div>
-                        <button className='flex justify-center items-center gap-2 text-sl bg-gray-50 py-2 px-4 text-gray-400 border border-gray-200 rounded-[10px] text-sm'>
+                        <button
+                            className='flex justify-center items-center gap-2 text-sl bg-gray-50 py-2 px-4 text-gray-400 border border-gray-200 rounded-[10px] text-sm duration-200 ease-out hover:bg-gray-200 hover:text-gray-800'
+                            onClick={() => setCartOpen(true)}>
                             <span>
                                 <Icon title='BiShoppingBag' />
                             </span>
@@ -88,6 +93,8 @@ const Header = ({ menuOpen, setMenuOpen }: menuState) => {
                 <span className={`h-[2px] w-[25px] bg-black duration-300 ease-in-out ${menuOpen && "opacity-0"}`}></span>
                 <span className={`h-[2px] w-[25px] bg-black duration-300 ease-in-out ${menuOpen && "rotate-45 -mt-3"}`}></span>
             </div>
+
+            <Cart cartOpen={cartOpen} setCartOpen={setCartOpen} />
         </header>
     )
 }

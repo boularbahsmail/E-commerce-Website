@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [cartOpen, setCartOpen] = useState<boolean>(false);
   return (
     <>
       <Head>
@@ -22,9 +23,13 @@ export default function Home() {
       </Head>
 
       <main
-        className={`p-4 h-screen w-screen ${menuOpen ? "overflow-y-hidden" : "overflow-y-auto"}`}
+        className={`p-4 h-screen w-screen ${menuOpen || cartOpen ? "overflow-y-hidden" : "overflow-y-auto"}`}
       >
-        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Header
+          menuOpen={menuOpen} setMenuOpen={setMenuOpen}
+          cartOpen={cartOpen}
+          setCartOpen={setCartOpen}
+        />
         <Hero />
         <Fashions />
         <FeaturedServices />
